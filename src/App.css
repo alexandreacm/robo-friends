@@ -10,3 +10,8 @@
       font-weight: 200;
       color: #0ccac4;
     }
+
+    .loading {
+      color: #FFF;
+      font-size: 35px;
+    }
