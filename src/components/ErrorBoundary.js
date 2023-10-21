@@ -5,16 +5,15 @@ class ErrorBoundary extends Component {
         super(props)
 
         this.state = {
-            hasError: false,
-            error: '',
-            ErrorInfo: ''
+            hasError: false
         }
     }
 
     componentDidCatch(error, errorInfo) {
         // You can also log the error to an error reporting service
-        this.setState({ hasError: true, error: error, ErrorInfo: errorInfo });
-        //console.log(error, errorInfo);
+        this.setState({ hasError: true });
+        // You can also log the error to an error reporting service
+        //logErrorToMyService(error, errorInfo);
     }
 
     render() {
