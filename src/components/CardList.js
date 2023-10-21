@@ -2,6 +2,9 @@ import React from 'react';
 import Card from '../components/Card';
 
 const CardList = ({ data }) => {
+    // if (true) {
+    //     throw new Error('OhNOO ERROR')
+    // }
     return (
         <div>
 
