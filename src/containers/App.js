@@ -7,7 +7,7 @@ import Scroll from '../components/Scroll';
 
 const App = () => {
     const [robots, setRobots] = useState([]);
-    const [searchfield, setSearchField] = useState('');
+    const [searchfield, setSearchfield] = useState('');
 
     useEffect(() => {
         const fetchData = () => {
@@ -20,7 +20,7 @@ const App = () => {
     }, [])
 
     const onSearchChange = (event) => {
-        setSearchField(event.target.value);
+        setSearchfield(event.target.value);
     }
 
     const filteredRobots = robots.filter(robot => {
